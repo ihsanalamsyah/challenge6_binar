@@ -19,7 +19,7 @@ dengan cara `sequelize db:migrate` pada terminal sehingga data sudah masuk kedal
 Database saya terdapat beberapa table, pada table User_Games saya membuat fungsi CRUD (Create, Read, Update, Delete) untuk memanipulasi table User_Games. Fungsi CRUD
 dibuat menggunakan API. Dalam challenge ini juga menggunakan middleware `app.use(express.static('public'));` untuk membaca file 'public' dan `app.set('view engine', 'ejs');`untuk membaca ejs (yang ada di direktori views) dan `app.use(express.json());` sehingga data dalam bentuk json dapat dijalankan.
 Selain itu, perlu meng-import data dengan cara membuat variable nama_table dan dalam variable import data dari direktori models.
-bentuk query-nya seperti berikut `const { User_Game, User_Game_Biodata, User_Game_History } = require('./models');`
+Bentuk query-nya seperti berikut `const { User_Game, User_Game_Biodata, User_Game_History } = require('./models');`
 Saya membuat middleware `app.use( express.urlencoded ({ extended: false }) );` untuk membaca form yang ada di direktori views
 
 Di dalam dashboard, kalian bisa memanipulasi setiap data dari table *User_Games* berupa membaca data, meng-update data dan meng-delete data. sehingga pengguna dapat
