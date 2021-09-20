@@ -3,9 +3,13 @@
 
 Dalam challenge ini saya membuat suatu database menggunakan postgreSQL dan localhost online.
 Saya membuat tiga table bernama *User_Games*, *User_Game_Biodata*, dan *User_Game_History* dari setiap table itu terdapat column-column berisi data user.
+
+
 Table *User_Games* terdapat column `id` dengan type data integer, `username`: string, `password`: string, dan `email`: string.
 Table *User_Game_Biodata* terdapat column `id`: integer, `user_id`: integer, `name`: string, `umur`: string, dan `pekerjaan`: string.
 Table *User_Game_History* terdapat tiga column `id`: integer, `user_id`: integer, dan `result`: string.
+
+
 Setiap table terdapat primary key `id`.
 Table *User_Game_Biodata*, dan *User_Game_History* terdapat column `user_id` dimana `user_id` menjadi foreign key dari `id` yang terdapat di-table *User_Games*.
 
