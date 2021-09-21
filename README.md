@@ -38,6 +38,6 @@ Lalu, perlu meng-import data dengan cara membuat variable nama_table dan dalam v
 
 Bentuk query-nya seperti berikut: `const { User_Game, User_Game_Biodata, User_Game_History } = require('./models');`
 
-Karena pengisian data dalam bentuk form middleware ini perlu dijalankan: `app.use( express.urlencoded ({ extended: false }) );` untuk membaca form yang ada di direktori views
+Karena pengisian data dalam bentuk form middleware ini perlu dijalankan: `app.use( express.urlencoded ({ extended: false }) );` bentuk form yang ada di direktori views
 
 Di dalam dashboard, kalian bisa memanipulasi setiap data dari table *User_Games* berupa membaca data, meng-update data dan meng-delete data. Sehingga pengguna dapat memanipulasi data dengan mudah
